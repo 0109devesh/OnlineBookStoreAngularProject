@@ -1,0 +1,67 @@
+.book-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin: 16px;
+    max-width: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #f2f2f2;
+    height: 220px; /* Adjust the height as needed */
+  }
+  
+  .card-header img {
+    max-height: 100%;
+    max-width: 100%; /* Ensure the image fills the available width */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
+  
+  .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: white;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+  
+  .author {
+    margin: 4px 0;
+  }
+  
+  .discounted-price {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: auto; /* Push the price to the bottom */
+  }
+  
+  .add-to-cart-button {
+    margin-top: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  

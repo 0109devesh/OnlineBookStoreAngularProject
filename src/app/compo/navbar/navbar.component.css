@@ -1,0 +1,20 @@
+.example-spacer{
+    flex: 1 1 auto;
+}
+
+
+.welcome-span {
+    display: flex;
+    align-items: flex-start;
+     margin-right: 10px;    /* Add some margin for separation  */
+  }
+  
+  .center-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+
+  

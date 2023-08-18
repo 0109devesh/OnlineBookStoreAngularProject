@@ -1,0 +1,98 @@
+<!-- <p>book-list works!</p> -->
+
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+
+      <div class="book-card">
+        <div class="card-header">
+          <img src="/assets/book2.jpg" alt="Book Cover" />
+          <div class="discount-badge">25% Off</div>
+        </div>
+        <div class="card-content">
+          <h2>Skill with People</h2>
+          <p class="author">Author: साने गुरुजी</p>
+          <div class="price">
+            <p class="price-line">
+              Price: <del>$270 </del>
+              <span class="discounted-price">&nbsp;&nbsp;&nbsp; Now: $203</span>
+            </p>
+          </div>
+          <div class="rating">
+            <span class="rating-star">&#9733;</span>
+            <span class="rating-star">&#9733;</span>
+            <span class="rating-star">&#9733;</span>
+            <span class="rating-star">&#9733;</span>
+            <span class="rating-star">&#9734;</span>
+          </div>
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+      </div>
+
+    </div> <!--  close outer div of the card    -->
+
+
+
+
+    <!-- Repeat for other book cards -->
+
+
+
+
+    <div class="col-lg-4 col-md-6 col-sm-6 col-12" *ngFor="let book of books">
+
+      <div class="book-card">
+        <div class="card-header">
+          <img src="/assets/shamchiAai.jpeg" alt="Book Cover" />
+          <div class="discount-badge">25% Off</div>
+        </div>
+        <div class="card-content">
+          <h2 [routerLink]="['/books/book',book.bookId]">{{book.bookName}}</h2>
+          <p class="author">Author: {{book.author}}</p>
+          <div class="price">
+            <p class="price-line">
+              Price: <del>${{book.price.toFixed(2)}} </del>
+              <span class="discounted-price">&nbsp;&nbsp;&nbsp; Now: ${{ (book.price * 0.75).toFixed(2) }}</span>
+            </p>
+          </div>
+          <div class="rating">
+            <span class="rating-star">&#9733;</span>
+            <span class="rating-star">&#9733;</span>
+            <span class="rating-star">&#9733;</span>
+            <span class="rating-star">&#9733;</span>
+            <span class="rating-star">&#9734;</span>
+          </div>
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+      </div>
+
+    </div> <!--  close outer div of the card    -->
+
+
+  </div> <!--  close row    -->
+</div> <!--  close container    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="book-card">
+    <img [src]="book.imageUrl" alt="Book Cover">
+    <h2>{{ book.name }}</h2>
+    <p>Author: {{ book.author }}</p>
+    <p>Price: ${{ book.price }}</p>
+  </div>
+   -->

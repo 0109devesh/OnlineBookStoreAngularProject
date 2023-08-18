@@ -1,0 +1,23 @@
+
+<mat-toolbar color="primary">
+    <span class="welcome-span">Welcome  <h1 *ngIf="currentUser" >, {{currentUser}} </h1></span>
+    <span class="example-spacer"></span>
+    <span class="center-span">
+      <a mat-icon-button routerLink="/">BookStore Ocean</a>
+    </span>
+    <span class="example-spacer"></span>
+    <span *ngIf="!loggedIn">
+      <a mat-icon-button style="margin-right: 30px;" routerLink="/users/login">Login</a>
+    </span>
+
+    <span *ngIf="loggedIn" (click)="logoutUser()">
+      <a mat-icon-button style="margin-right: 30px;">Logout</a>
+    </span>
+  </mat-toolbar>
+  
+
+  <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="showAlert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div> -->
+

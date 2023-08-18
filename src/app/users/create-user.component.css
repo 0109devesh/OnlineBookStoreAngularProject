@@ -1,0 +1,5 @@
+.custom-alert {
+    max-height: 40px; /* Adjust this value as needed */
+    padding: 5px 10px; /* Adjust padding as needed */
+    font-size: 14px; /* Adjust font size as needed */
+  }
